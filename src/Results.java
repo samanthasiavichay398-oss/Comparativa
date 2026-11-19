@@ -1,4 +1,3 @@
-
 public class Results {
 
     private String nombre;
@@ -6,6 +5,7 @@ public class Results {
     private long tiempo;
 
     public Results(String nombre, String sample, long tiempo) {
+
         this.nombre = nombre;
         this.sample = sample;
         this.tiempo = tiempo;
@@ -25,8 +25,9 @@ public class Results {
 
     @Override
     public String toString() {
-        return "Estructura: " + nombre +
-               " | Muestra: " + sample +
-               " | Tiempo: " + tiempo + " ns";
+
+        return "Results [" + nombre +
+                ", duration=" + tiempo +
+                "ns, sample=" + sample + "]";
     }
 }
